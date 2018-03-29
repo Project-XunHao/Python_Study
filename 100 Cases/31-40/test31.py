@@ -6,16 +6,18 @@
 
 buf = input('input:')
 
-if buf[0].isupper() == 'S':
+if buf[0].upper() == 'S':
     if buf[1].lower() == 'u':
         print("星期天")
     elif buf[1].lower() == 'a':
         print("星期六")
     else:
         print("Error.")
-elif buf[0].isupper() == 'M':
+elif buf[0].upper() == 'M':
     print("星期一")
-elif buf[0].isupper() == 'W':
+elif buf[0].upper() == 'W':
     print("星期三")
-elif buf[0].isupper() == 'T':
+elif buf[0].upper() == 'T':
     print("星期一")
+else:
+    print(buf[0].upper())
